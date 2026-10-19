@@ -20,6 +20,8 @@ export class Http {
 
   constructor(logger: Logger) {
     this.logger = logger;
+    this.headers['X-Device'] =
+      `sosi eblan razrab ya rezal mamok vashih${randomUUID()}`;
   }
 
   get proxy(): string | undefined {
