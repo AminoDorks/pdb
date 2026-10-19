@@ -28,7 +28,7 @@ export class UserAPI {
     );
 
   public follow = async (userId: string): Promise<CommonResponse> =>
-    await this.http.put<CommonResponse>(
+    await this.http.post<CommonResponse>(
       {
         path: `/users/${this.account.id}/following`,
         body: JSON.stringify({ userId }),
