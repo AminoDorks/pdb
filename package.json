@@ -1,0 +1,41 @@
+{
+  "name": "personality-database",
+  "module": "index.ts",
+  "type": "module",
+  "version": "1.4.4",
+  "main": "./dist/index.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "pdb",
+    "personality database"
+  ],
+  "scripts": {
+    "build": "bun build.ts",
+    "test": "bun src/test.ts"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AminoDorks/pdb"
+  },
+  "bugs": {
+    "url": "https://github.com/AminoDorks/pdb/issues"
+  },
+  "homepage": "https://github.com/AminoDorks/pdb#readme",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "netbun": "^0.4.1",
+    "pino": "^10.4.0",
+    "pino-pretty": "^13.2.0",
+    "zod": "^4.6.7"
+  }
+}
