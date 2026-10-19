@@ -9,11 +9,19 @@
     "allowJs": true,
     "types": ["bun"],
 
+    // Build output (for npm package)
+    "declaration": true,
+    "declarationMap": true,
+    "emitDeclarationOnly": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "rewriteRelativeImportExtensions": true,
+
     // Bundler mode
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
+    "allowImportingTsExtensions": false,
     "verbatimModuleSyntax": true,
-    "noEmit": true,
+    "noEmit": false,
 
     // Best practices
     "strict": true,
@@ -25,6 +33,8 @@
     // Some stricter flags (disabled by default)
     "noUnusedLocals": false,
     "noUnusedParameters": false,
-    "noPropertyAccessFromIndexSignature": false
-  }
+    "noPropertyAccessFromIndexSignature": false,
+  },
+  "include": ["src/**/*", "tests"],
+  "exclude": ["node_modules", "dist"],
 }
