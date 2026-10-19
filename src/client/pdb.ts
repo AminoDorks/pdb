@@ -47,6 +47,10 @@ export class PersonalityDatabase {
     return this.auth.account;
   }
 
+  get proxy(): string | undefined {
+    return this.http.proxy;
+  }
+
   set proxy(value: string | undefined) {
     this.http.proxy = value;
   }
